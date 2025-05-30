@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Navigation from '@/components/Navigation';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main className="min-h-screen bg-white flex items-center justify-center relative">
       <div className="absolute left-8 top-8">
@@ -13,7 +18,10 @@ export default function Home() {
       <div className="flex">
         {/* Left div with three sections */}
         <div className="w-[402px] h-[500px] relative">
-          <div className="absolute left-0 top-0 w-[134px] h-[500px] bg-[#733B97] rounded-bl-[77px] flex items-center justify-end">
+          <div 
+            className="absolute left-0 top-0 w-[134px] h-[500px] bg-[#733B97] rounded-bl-[77px] flex items-center justify-end cursor-pointer"
+            onClick={() => router.push('/about')}
+          >
             <span className="text-[#FF395C] text-2xl font-normal -rotate-90 whitespace-nowrap -mr-4">about</span>
           </div>
           <div className="absolute right-0 top-0 w-[268px] h-[250px] bg-[#84CEF1] rounded-tr-[77px] flex items-center justify-center">
