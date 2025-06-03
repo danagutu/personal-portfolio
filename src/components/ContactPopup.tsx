@@ -2,6 +2,7 @@
 
 import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { IoClose } from 'react-icons/io5';
 
 interface ContactPopupProps {
   onClose: () => void;
@@ -16,9 +17,9 @@ export default function ContactPopup({ onClose }: ContactPopupProps) {
     <div className="fixed top-0 right-0 w-1/2 h-screen bg-[#66BC4D] p-0">
       <button 
         onClick={onClose}
-        className="absolute top-8 left-8 text-[#FFE31A] text-2xl font-normal"
+        className="absolute top-8 left-8 text-[#FFE31A] hover:text-white transition-colors duration-200"
       >
-        X
+        <IoClose size={32} />
       </button>
       <div className="absolute bottom-[40%] left-8 flex items-center gap-4">
         <MdEmail className="text-[#FFE31A] w-10 h-10" />
