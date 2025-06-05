@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function About() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function About() {
             className="absolute left-8 top-8 cursor-pointer"
             onClick={() => router.push('/')}
           >
-            <span className="text-white font-['Ubuntu'] text-[40px] font-medium leading-normal" style={{ textShadow: '-4px 4px 0px #FF395C' }}>
+            <span className="text-white font-['Ubuntu'] text-[32px] font-medium leading-normal" style={{ textShadow: '-4px 4px 0px #FF395C' }}>
               {'<<<'} About
             </span>
           </div>
@@ -32,7 +33,7 @@ export default function About() {
 
         {/* Column Three */}
         <div className="w-1/3 h-full bg-[#733B97] relative">
-          <div className="w-full h-[60%] bg-[#FF395C] absolute top-0 rounded-br-[77px] flex items-center justify-center">
+          <div className="w-full h-[60%] bg-[#FF395C] absolute top-0 rounded-br-[77px] flex items-center justify-center border-b-[10px] border-r-[10px] border-white">
             <div className="text-white font-['Ubuntu'] text-2xl font-light w-[85%] space-y-4">
               <p>
                 My background in economics shaped my <span className="font-bold">optimization mindset</span>.
@@ -54,13 +55,22 @@ export default function About() {
         </div>
 
         {/* Column Four */}
-        <div className="w-1/3 h-full bg-[#733B97] flex items-center justify-center">
+        <div className="w-1/3 h-full bg-[#733B97] flex items-center justify-center border-t-[10px] border-white">
           <span className="text-white font-['Ubuntu'] text-2xl font-light">This is me :) {'>>>'}</span>
         </div>
 
         {/* Column Five */}
-        <div className="w-1/3 h-full bg-white flex items-center justify-center">
-          <span className="text-[#733B97] font-['Ubuntu'] text-2xl">Picture goes here</span>
+        <div className="w-1/3 h-full bg-white flex items-center justify-center border-b-[15px] border-[#733B97]">
+          <div className="rounded-[20px] overflow-hidden p-[5px] border-[5px] border-[#FF395C]">
+            <Image
+              src="/profile-picture.png"
+              alt="Dana Gutu"
+              width={280}
+              height={400}
+              style={{ borderRadius: '20px' }}
+              priority
+            />
+          </div>
         </div>
       </div>
     </main>
