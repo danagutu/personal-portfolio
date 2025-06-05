@@ -53,4 +53,5 @@ jobs:
           clean-exclude: |
             CNAME
           commit-message: "Deploy to GitHub Pages"
-          force: true 
+          force: true
+          single-commit: true 
