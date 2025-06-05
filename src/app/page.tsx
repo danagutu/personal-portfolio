@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Navigation from '@/components/Navigation';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import ContactPopup from '@/components/ContactPopup';
@@ -43,15 +41,24 @@ export default function Home() {
 
         {/* Right div with three columns */}
         <div className="w-[402px] h-[500px] relative">
-          <div className="absolute left-0 top-0 w-[134px] h-[330px] bg-[#2157A4] rounded-[77px] flex items-center group">
+          <div 
+            className="absolute left-0 top-0 w-[134px] h-[330px] bg-[#2157A4] rounded-[77px] flex items-center group cursor-pointer"
+            onClick={() => router.push('/case-studies/case-study-1')}
+          >
             <span className="text-[#84CEF1] text-2xl font-normal group-hover:hidden flex-1 text-center">1</span>
             <span className="text-[#84CEF1] text-2xl font-normal hidden group-hover:block absolute right-0">fidelis ai</span>
           </div>
-          <div className="absolute left-1/2 bottom-0 -translate-x-1/2 w-[134px] h-[330px] bg-[#FFE31A] rounded-[77px] flex items-center justify-center group">
+          <div 
+            className="absolute left-1/2 bottom-0 -translate-x-1/2 w-[134px] h-[330px] bg-[#FFE31A] rounded-[77px] flex items-center justify-center cursor-pointer group"
+            onClick={() => router.push('/case-studies/case-study-2')}
+          >
             <span className="text-[#66BC4D] text-2xl font-normal group-hover:hidden">2</span>
             <span className="text-[#66BC4D] text-2xl font-normal hidden group-hover:block">marketypes</span>
           </div>
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[134px] h-[330px] bg-[#FF395C] rounded-[77px] flex items-center group">
+          <div 
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-[134px] h-[330px] bg-[#FF395C] rounded-[77px] flex items-center group cursor-pointer"
+            onClick={() => router.push('/case-studies/case-study-3')}
+          >
             <span className="text-[#733B97] text-2xl font-normal group-hover:hidden flex-1 text-center">3</span>
             <span className="text-[#733B97] text-2xl font-normal hidden group-hover:block absolute left-0">
               nomad<br />spot
