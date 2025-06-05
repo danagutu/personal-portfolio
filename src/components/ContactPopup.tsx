@@ -57,11 +57,6 @@ export default function ContactPopup({ onClose }: ContactPopupProps) {
           github.com/danagutu
         </span>
       </div>
-      <div className="absolute bottom-8 left-8">
-        <span className="text-[#FFE31A] text-2xl font-normal font-ubuntu">
-          others? incoming.
-        </span>
-      </div>
     </div>
   );
 } 
