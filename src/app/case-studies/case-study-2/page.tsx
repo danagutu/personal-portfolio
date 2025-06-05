@@ -48,7 +48,7 @@ export default function CaseStudyTwo() {
           <div>
             <h2 className="text-2xl font-bold mb-4">✨ The Big Idea</h2>
             <p className="text-lg leading-relaxed">
-              Marketypes is a marketing startup with a twist: it helps businesses discover their unique "marketing personality" — called a Marketype — through a custom quiz. Think MBTI, but for your brand voice and strategy.
+              Marketypes is a marketing startup with a twist: it helps businesses discover their unique &quot;marketing personality&quot; — called a Marketype — through a custom quiz. Think MBTI, but for your brand voice and strategy.
               <br /><br />
               They had an outdated site and needed something bold, fun, and strategy-smart. The goal? Create an engaging experience that nudges users to take the quiz and reach out — without being pushy. Oh, and the site had to reflect their own Marketype identity: fun, colorful, and a little bit unexpected.
             </p>
@@ -59,7 +59,7 @@ export default function CaseStudyTwo() {
             <p className="text-lg leading-relaxed">
               I led the full redesign — from structure and interaction design to playful visuals.
               <br /><br />
-              I worked closely with the CEO and the rest of the team (who had a vision but were unsure how to implement it) to define how the site should feel to a first-time visitor: "bubbly, colorful, a little chaotic… but still smart."
+              I worked closely with the CEO and the rest of the team (who had a vision but were unsure how to implement it) to define how the site should feel to a first-time visitor: &quot;bubbly, colorful, a little chaotic… but still smart.&quot;
               <br /><br />
               Using one of their character illustrations as inspiration, I built a UI language from the ground up — with custom shapes, floating elements, and bright colors that echoed the visual voice of the quiz.
             </p>
@@ -88,7 +88,7 @@ export default function CaseStudyTwo() {
                   <br />
                   • The quiz appears right in the flow, with results visible on the same card — to keep momentum high.
                   <br />
-                  • The contact form sits right after the quiz — catching users while they're still curious.
+                  • The contact form sits right after the quiz — catching users while they&apos;re still curious.
                 </p>
                 <p className="text-sm text-gray-300 italic mb-4 mt-4">Scroll through this mockup to get a feel for the Home page.</p>
                 <div className="w-full h-[490px] relative mb-4 border-2 border-gray-600 rounded-lg overflow-hidden">
@@ -145,13 +145,13 @@ export default function CaseStudyTwo() {
               <div>
                 <h3 className="text-xl font-bold mb-2">About Page: The Team, But Make It Fun</h3>
                 <p className="text-lg leading-relaxed pl-4">
-                  • Irregular shapes for each team member's photo and info.
+                  • Irregular shapes for each team member&apos;s photo and info.
                   <br />
                   • Fun facts, quirky titles, and bios build connection.
                   <br />
-                  • Bonus: a cheeky teaser — "Psst, ever wondered what our Marketype is? It's Abcdefghijkl 🤫" — scribbled out to spark curiosity and memorability.
+                  • Bonus: a cheeky teaser — &quot;Psst, ever wondered what our Marketype is? It&apos;s Abcdefghijkl 🤫&quot; — scribbled out to spark curiosity and memorability.
                 </p>
-                <p className="text-sm text-gray-300 italic mb-4 mt-8">Isn't this kind of cute?</p>
+                <p className="text-sm text-gray-300 italic mb-4 mt-8">Isn&apos;t this kind of cute?</p>
                 <div className="w-full h-[490px] relative mb-4 border-2 border-gray-600 rounded-lg overflow-hidden">
                   <div className="w-full h-full overflow-y-auto">
                     <Image

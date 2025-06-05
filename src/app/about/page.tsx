@@ -19,7 +19,7 @@ export default function About() {
               {'<<<'} About
             </span>
           </div>
-          <span className="text-white font-['Ubuntu'] text-2xl font-light pr-8 ml-auto">Let's keep it simple:</span>
+          <span className="text-white font-['Ubuntu'] text-2xl font-light pr-8 ml-auto">Let&apos;s keep it simple:</span>
         </div>
 
         {/* Column Two */}
