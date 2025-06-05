@@ -30,6 +30,7 @@ jobs:
           echo "Starting build..."
           npm run build
           echo "Build completed"
+          echo "Contents of out directory:"
           ls -la out/
 
       - name: Copy CNAME
@@ -37,6 +38,7 @@ jobs:
           echo "Copying CNAME..."
           cp CNAME out/
           echo "CNAME copied"
+          echo "Contents of out directory after copying CNAME:"
           ls -la out/
 
       - name: Deploy
@@ -44,4 +46,5 @@ jobs:
         with:
           folder: out
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true 
