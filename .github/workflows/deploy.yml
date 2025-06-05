@@ -30,13 +30,17 @@ jobs:
           echo "Starting build..."
           npm run build
           echo "Build completed"
+          echo "Contents of out directory:"
           ls -la out/
+          echo "First few lines of index.html:"
+          head -n 20 out/index.html
 
       - name: Copy CNAME
         run: |
           echo "Copying CNAME..."
           cp CNAME out/
           echo "CNAME copied"
+          echo "Contents of out directory after CNAME copy:"
           ls -la out/
 
       - name: Deploy
@@ -47,4 +51,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
           clean-exclude: |
-            CNAME 
+            CNAME
+          commit-message: "Deploy to GitHub Pages"
+          force: true 
