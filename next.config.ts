@@ -1,13 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    remotePatterns: [],
   },
-  trailingSlash: true,
   basePath: '',
-};
+  assetPrefix: '',
+  trailingSlash: true,
+}
 
-export default nextConfig;
+export default nextConfig
