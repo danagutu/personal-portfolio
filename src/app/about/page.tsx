@@ -25,7 +25,7 @@ export default function About() {
         {/* Column Two */}
         <div className="w-1/3 h-full bg-white flex items-center justify-center">
           <div className="text-[#733B97] font-['Ubuntu'] text-2xl space-y-4 w-[85%]">
-            <p className="font-bold">I have +1.5 years of coding experience in startups.</p>
+            <p className="font-bold">I have over 1.5 years of software development experience in both startup and corporate settings.</p>
             <p className="font-light">I have worked on both sides of the handoff.</p>
             <p className="font-light">My designs emphasyse clarity - intuitive for users to navigate and easy for developers to build.</p>
           </div>
