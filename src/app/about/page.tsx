@@ -33,7 +33,7 @@ export default function About() {
 
         {/* Column Three */}
         <div className="w-1/3 h-full bg-[#733B97] relative">
-          <div className="w-full h-[60%] bg-[#FF395C] absolute top-0 rounded-br-[77px] flex items-center justify-center border-b-[10px] border-r-[10px] border-white">
+          <div className="w-full h-[60%] bg-[#FF395C] absolute top-0 rounded-br-[77px] flex items-center justify-center">
             <div className="text-white font-['Ubuntu'] text-2xl font-light w-[85%] space-y-4">
               <p>
                 My background in economics shaped my <span className="font-bold">optimization mindset</span>.
@@ -55,12 +55,12 @@ export default function About() {
         </div>
 
         {/* Column Four */}
-        <div className="w-1/3 h-full bg-[#733B97] flex items-center justify-center border-t-[10px] border-white">
+        <div className="w-1/3 h-full bg-[#733B97] flex items-center justify-center">
           <span className="text-white font-['Ubuntu'] text-2xl font-light">This is me :) {'>>>'}</span>
         </div>
 
         {/* Column Five */}
-        <div className="w-1/3 h-full bg-white flex items-center justify-center border-b-[15px] border-[#733B97]">
+        <div className="w-1/3 h-full bg-white flex items-center justify-center">
           <div className="rounded-[20px] overflow-hidden p-[5px] border-[5px] border-[#FF395C]">
             <Image
               src="/profile-picture.png"
