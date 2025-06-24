@@ -7,10 +7,8 @@ import ContactPopup from '@/components/ContactPopup';
 export default function Home() {
   const router = useRouter();
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const [clickedDiv, setClickedDiv] = useState<string | null>(null);
 
   const handleCaseStudyClick = (caseStudy: string, route: string) => {
-    setClickedDiv(caseStudy);
     setTimeout(() => {
       router.push(route);
     }, 150);
