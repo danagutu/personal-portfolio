@@ -8,9 +8,9 @@ export default function About() {
 
   return (
     <main className="min-h-screen bg-[#733B97] overflow-x-auto">
-      <div className="flex h-screen w-[2000px]">
+      <div className="flex h-screen w-full max-[872px]:w-[1750px]">
         {/* Column One */}
-        <div className="w-[400px] h-full bg-[#733B97] flex items-center relative flex-shrink-0">
+        <div className="w-1/3 h-full bg-[#733B97] flex items-center relative flex-shrink-0 max-[872px]:w-[350px]">
           <div 
             className="absolute left-8 top-8 cursor-pointer"
             onClick={() => router.push('/')}
@@ -23,7 +23,7 @@ export default function About() {
         </div>
 
         {/* Column Two */}
-        <div className="w-[400px] h-full bg-white flex items-center justify-center flex-shrink-0">
+        <div className="w-1/3 h-full bg-white flex items-center justify-center flex-shrink-0 max-[872px]:w-[350px]">
           <div className="text-[#733B97] font-['Ubuntu'] text-2xl space-y-4 w-[85%]">
             <p className="font-bold">I have over 1.5 years of software development experience in both startup and corporate settings.</p>
             <p className="font-light">I have worked on both sides of the handoff.</p>
@@ -32,7 +32,7 @@ export default function About() {
         </div>
 
         {/* Column Three */}
-        <div className="w-[400px] h-full bg-[#733B97] relative flex-shrink-0">
+        <div className="w-1/3 h-full bg-[#733B97] relative flex-shrink-0 max-[872px]:w-[350px]">
           <div className="w-full h-[60%] bg-[#FF395C] absolute top-0 rounded-br-[77px] flex items-center justify-center">
             <div className="text-white font-['Ubuntu'] text-2xl font-light w-[85%] space-y-4">
               <p>
@@ -55,13 +55,13 @@ export default function About() {
         </div>
 
         {/* Column Four */}
-        <div className="w-[400px] h-full bg-[#733B97] flex items-center justify-center flex-shrink-0">
+        <div className="w-1/3 h-full bg-[#733B97] flex items-center justify-center flex-shrink-0 max-[872px]:w-[350px]">
           <span className="text-white font-['Ubuntu'] text-2xl font-light">This is me :) {'>>>'}</span>
         </div>
 
         {/* Column Five */}
-        <div className="w-[400px] h-full bg-white flex items-center justify-center flex-shrink-0">
-          <div className="rounded-[20px] overflow-hidden p-[5px] border-[5px] border-[#FF395C]">
+        <div className="w-1/3 h-full bg-white flex items-center justify-center flex-shrink-0 max-[872px]:w-[350px]">
+          <div className="rounded-[20px] overflow-hidden">
             <Image
               src="/profile-picture.png"
               alt="Dana Gutu"
