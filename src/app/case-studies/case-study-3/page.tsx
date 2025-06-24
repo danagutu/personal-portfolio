@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
+import { IoArrowBack } from 'react-icons/io5';
 
 export default function CaseStudyThree() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function CaseStudyThree() {
         onClick={() => router.push('/')}
         className="text-[#FF395C] text-4xl mb-8 hover:text-white transition-opacity"
       >
-        ×
+        <IoArrowBack size={32} />
       </button>
       <div className="h-screen flex items-center justify-center -mt-32">
         <div className="text-center">

@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { IoArrowBack } from 'react-icons/io5';
 
 export default function CaseStudyTwo() {
   const router = useRouter();
@@ -14,7 +15,7 @@ export default function CaseStudyTwo() {
           onClick={() => router.push('/')}
           className="text-[#FFE31A] text-4xl mb-8 hover:opacity-80 transition-opacity"
         >
-          ×
+          <IoArrowBack size={32} />
         </button>
 
         {/* Title and subtitle */}
