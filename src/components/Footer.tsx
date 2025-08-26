@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/in/danagutu',
+              href: 'https://www.linkedin.com/in/dana-gutu/',
       color: 'hover:text-blue-600'
     },
     {
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
     {
       name: 'Twitter',
       icon: <Twitter size={20} />,
-      href: 'https://twitter.com/danagutu',
+              href: 'https://x.com/dut_mio',
       color: 'hover:text-blue-400'
     },
 

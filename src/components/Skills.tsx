@@ -133,22 +133,40 @@ const Skills: React.FC = () => {
             <div className="space-y-8">
               {[
                 {
-                  year: '2023 - Present',
-                  title: 'Senior Product Designer',
-                  company: 'TechCorp',
-                  description: 'Leading design initiatives for enterprise SaaS products, mentoring junior designers, and establishing design systems.'
+                  year: 'Nov 2024 - Present',
+                  title: 'Full-Stack Engineer / Product Designer',
+                  company: 'Fidelis AI',
+                  companyUrl: 'https://www.fidelisai.tech/',
+                  description: [
+                    'Designed high-fidelity mockups in Figma, incorporating accessibility best practices and defining user types and journeys for autonomous vehicle simulation platform.',
+                    'Conducted usability testing with 5 engineers using think-aloud protocol to identify navigation and UI improvements.',
+                    'Collaborated with developers for seamless design implementation, building a React (TypeScript) interface with real-time pixel streaming from Unreal Engine.',
+                    'Integrated AWS services (DynamoDB, API Gateway, Amplify, S3, Cognito) for backend and deployment.',
+                    'Supported CEO in defining product personas, user stories, and analytics dashboard structure.'
+                  ]
                 },
                 {
-                  year: '2021 - 2023',
-                  title: 'Product Designer',
-                  company: 'StartupXYZ',
-                  description: 'Designed user experiences for mobile and web applications, conducted user research, and collaborated with engineering teams.'
+                  year: 'Nov 2023 - Mar 2025',
+                  title: 'Digital Project Manager',
+                  company: 'Morrow Digital',
+                  companyUrl: 'https://www.themorrow.digital/',
+                  description: [
+                    'Redesigned user flows and UI screens across healthcare, sustainability, and e-commerce apps, reducing task friction and clicks per action.',
+                    'Performed ongoing usability testing and A/B testing for apps like the Refill App (City to Sea), leading to a successful increase in sign-ups for the Refill & Return scheme by reframing the payment/subscription model.',
+                    'Delivered design specifications and guidelines to developers, collaborating in real time for high design fidelity.',
+                    'Built React-based mobile app features and used Supabase for database management.',
+                    'Streamlined onboarding for healthcare app through redesigned sign-up flow, improving user clarity and conversion.'
+                  ]
                 },
                 {
-                  year: '2019 - 2021',
-                  title: 'UX Designer',
-                  company: 'Design Agency',
-                  description: 'Created user interfaces and experiences for various clients across different industries and platforms.'
+                  year: 'Jun - Aug 2024',
+                  title: 'Software Engineering Intern',
+                  company: 'NatWest Bank',
+                  companyUrl: 'https://www.natwestgroup.com/',
+                  description: [
+                    'Designed and developed a green investing mobile banking feature, winning Best Mobile Application in internal competition.',
+                    'Created internal Developer Stacks to streamline onboarding for engineers company-wide, and built APIs for data retrieval and app packaging in Python.'
+                  ]
                 }
               ].map((experience, index) => (
                 <motion.div
@@ -166,17 +184,39 @@ const Skills: React.FC = () => {
                   </div>
                   
                   <div className="md:w-2/3">
-                    <div className="bg-white rounded-xl p-6 shadow-md">
-                      <h4 className="text-lg font-semibold text-text-primary mb-1">
-                        {experience.title}
-                      </h4>
-                      <p className="text-primary-color font-medium mb-3">
-                        {experience.company}
-                      </p>
-                      <p className="text-text-secondary leading-relaxed">
-                        {experience.description}
-                      </p>
-                    </div>
+                                         <div className="bg-white rounded-xl p-6 shadow-md">
+                       <h4 className="text-lg font-semibold text-text-primary mb-1">
+                         {experience.title}
+                       </h4>
+                       <p className="text-primary-color font-medium mb-3">
+                         {experience.companyUrl ? (
+                           <a 
+                             href={experience.companyUrl} 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="underline hover:underline transition-colors duration-200"
+                           >
+                             {experience.company}
+                           </a>
+                         ) : (
+                           experience.company
+                         )}
+                       </p>
+                       {Array.isArray(experience.description) ? (
+                         <ul className="text-text-secondary leading-relaxed space-y-2">
+                           {experience.description.map((item, itemIndex) => (
+                             <li key={itemIndex} className="flex items-start">
+                               <span className="text-primary-color mr-2 mt-1">•</span>
+                               <span>{item}</span>
+                             </li>
+                           ))}
+                         </ul>
+                       ) : (
+                         <p className="text-text-secondary leading-relaxed">
+                           {experience.description}
+                         </p>
+                       )}
+                     </div>
                   </div>
                 </motion.div>
               ))}

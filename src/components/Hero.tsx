@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
               <Mail size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/danagutu"
+              href="https://www.linkedin.com/in/dana-gutu/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-primary-color transition-colors duration-200"

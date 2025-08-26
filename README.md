@@ -169,7 +169,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For questions or support, please contact:
 - Email: danagutu2002@gmail.com
-- LinkedIn: [linkedin.com/in/danagutu](https://linkedin.com/in/danagutu)
+- LinkedIn: [linkedin.com/in/dana-gutu](https://www.linkedin.com/in/dana-gutu/)
 
 ---
 
