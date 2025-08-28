@@ -35,16 +35,7 @@ const Projects: React.FC = () => {
       link: "#",
       featured: true
     },
-    {
-      id: 3,
-      title: "Healthcare Dashboard",
-      description: "Designed an intuitive dashboard for healthcare professionals to manage patient data and improve workflow efficiency.",
-      category: "Dashboard Design",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Figma", "Design Systems", "Accessibility", "Healthcare UX"],
-      link: "#",
-      featured: true
-    }
+
   ];
 
   const allProjects = projects;

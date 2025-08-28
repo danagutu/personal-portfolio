@@ -34,9 +34,6 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
             About Me
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            A passionate product designer with a love for creating meaningful digital experiences
-          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -48,11 +45,14 @@ const About: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-primary-color rounded-lg flex items-center justify-center mr-4">
-                  <User size={24} className="text-white" />
+              <div className="flex justify-center mb-6">
+                <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg">
+                  <img 
+                    src="/profile_picture.jpg" 
+                    alt="Dana Gutu - Product Designer" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold text-text-primary">Who I Am</h3>
               </div>
               
               <p className="text-text-secondary mb-6 leading-relaxed">
