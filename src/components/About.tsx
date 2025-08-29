@@ -56,11 +56,11 @@ const About: React.FC = () => {
               </div>
               
               <p className="text-text-secondary mb-6 leading-relaxed">
-                I'm a Junior Product Designer with a background in software development — which means I understand both sides of the handoff. With 1.5+ years of experience in startups and corporate teams, I design iOS experiences that are not only intuitive for users but also seamless for developers to bring to life.
+                I'm a Junior Product Designer with a background in software development — which means I understand both sides of the handoff. With 1.5+ years of experience in startups and corporate teams, I design experiences that are not only intuitive for users but also seamless for developers to bring to life.
               </p>
               
               <p className="text-text-secondary leading-relaxed">
-                My roots in economics fuel my optimization mindset: I look for every opportunity to reduce friction, align product goals, and streamline the journey. By blending behavioral psychology with Apple's Liquid Glass design language, Human Interface Guidelines, and intelligent features, I craft mobile experiences that feel effortless — the kind that just click.
+                Grounded in economics, I bring an optimization mindset to product design, always seeking to reduce friction, align goals, and streamline the journey. By blending behavioral psychology with Apple's Human Interface Guidelines, Google's Material Design, and emerging patterns in intelligent interfaces, I create the kind of digital experiences that just click.
               </p>
             </div>
           </motion.div>
