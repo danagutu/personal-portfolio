@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Palette, Users, Code, BarChart3 } from 'lucide-react';
+import { Palette, Users, Code } from 'lucide-react';
 
 interface SkillCategory {
   id: string;
@@ -18,8 +18,7 @@ const Skills: React.FC = () => {
       icon: <Palette size={24} />,
       description: 'Proficient in industry-standard design tools and software',
       skills: [
-        'Figma', 'Sketch', 'Adobe Creative Suite', 'InVision', 'Principle',
-        'Framer', 'Protopie', 'Zeplin', 'Abstract', 'Notion'
+        'Figma', 'Sketch', 'Adobe Creative Suite', 'Miro', 'Notion'
       ]
     },
     {
@@ -28,8 +27,8 @@ const Skills: React.FC = () => {
       icon: <Users size={24} />,
       description: 'Comprehensive user research and testing methodologies',
       skills: [
-        'User Interviews', 'Usability Testing', 'A/B Testing', 'Analytics',
-        'Persona Development', 'Journey Mapping', 'Card Sorting', 'Surveys'
+        'User Interviews', 'Usability Testing', 'A/B Testing',
+        'Persona Development', 'Journey Mapping'
       ]
     },
     {
@@ -38,18 +37,9 @@ const Skills: React.FC = () => {
       icon: <Code size={24} />,
       description: 'Understanding of front-end development and technical constraints',
       skills: [
-        'HTML/CSS', 'JavaScript', 'React', 'Design Systems', 'Responsive Design',
-        'Accessibility (WCAG)', 'Performance Optimization', 'Git'
-      ]
-    },
-    {
-      id: 'strategy',
-      title: 'Design Strategy',
-      icon: <BarChart3 size={24} />,
-      description: 'Strategic thinking and business alignment',
-      skills: [
-        'Design Thinking', 'Design Sprints', 'Information Architecture',
-        'Content Strategy', 'Brand Strategy', 'Product Strategy'
+        'HTML/CSS', 'JavaScript', 'React', 'React Native', 'TypeScript',
+        'Design Systems', 'Responsive Design', 'Git', 'AWS', 'Vercel', 
+        'Firebase', 'Supabase'
       ]
     }
   ];
@@ -73,7 +63,7 @@ const Skills: React.FC = () => {
         </motion.div>
 
         {/* Skill Categories Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.id}
