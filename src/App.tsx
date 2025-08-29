@@ -1,17 +1,38 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import FidelisAICaseStudy from './components/FidelisAICaseStudy';
+
+// Homepage component
+const HomePage: React.FC = () => {
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 const App: React.FC = () => {
-  console.log('App component is rendering...');
-  
   return (
     <Router>
-      <div className="App" style={{ padding: '20px', backgroundColor: '#f0f0f0', minHeight: '100vh' }}>
-        <h1 style={{ color: '#333' }}>Test - Portfolio is working!</h1>
-        <p style={{ color: '#666' }}>If you can see this, the basic React setup is working.</p>
-        <p style={{ color: '#666' }}>Current time: {new Date().toLocaleString()}</p>
-        <p style={{ color: '#666' }}>Deployment: {new Date().toISOString()}</p>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/fidelis-ai-case-study" element={<FidelisAICaseStudy />} />
+      </Routes>
     </Router>
   );
 };
