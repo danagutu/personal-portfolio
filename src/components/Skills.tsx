@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
       icon: <Palette size={24} />,
       description: 'Proficient in industry-standard design tools and software',
       skills: [
-        'Figma', 'Sketch', 'Adobe Creative Suite', 'Miro', 'Notion'
+        'Figma', 'Photoshop', 'Miro', 'Notion'
       ]
     },
     {
