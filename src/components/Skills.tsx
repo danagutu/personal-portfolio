@@ -74,7 +74,7 @@ const Skills: React.FC = () => {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-primary-color rounded-lg flex items-center justify-center mr-4">
+                <div className="w-20 h-16 bg-primary-color rounded-lg flex items-center justify-center mr-4 px-4">
                   <div className="text-white">
                     {category.icon}
                   </div>
