@@ -1,6 +1,7 @@
 {
   "name": "danagutu-portfolio",
   "version": "1.0.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@types/node": "^20.0.0",
