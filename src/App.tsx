@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,10 +7,11 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FidelisAICaseStudy from './components/FidelisAICaseStudy';
 
-const App: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
-    <div className="App">
+    <>
       <Header />
       <main>
         <Hero />
@@ -19,7 +21,20 @@ const App: React.FC = () => {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/fidelis-ai-case-study" element={<FidelisAICaseStudy />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

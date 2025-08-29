@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface Project {
   id: number;
@@ -14,23 +15,36 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (projectId: number) => {
+    if (projectId === 1) {
+      // Navigate to Fidelis AI case study
+      navigate('/fidelis-ai-case-study');
+    } else if (projectId === 2) {
+      // Navigate to Fidelis AI case study (temporary for Nomad Spot)
+      navigate('/fidelis-ai-case-study');
+    }
+    // Add more project navigation logic here as needed
+  };
+
   const projects: Project[] = [
     {
       id: 1,
-      title: "FinTech Mobile App",
-      description: "Redesigned the mobile banking experience for a leading fintech company, improving user engagement by 40% and reducing support tickets by 60%.",
-      category: "Mobile Design",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Figma", "Prototyping", "User Research", "iOS/Android"],
+      title: "Fidelis AI",
+      description: "Designed and built 0→1 an autonomous vehicle simulations platform for an AI-powered startup, achieving the goal of securing investor funding.",
+      category: "SaaS B2B Platform",
+      image: "/images/projects/covers/cover-image-fidelis-ai.png",
+      technologies: ["Figma", "Prototyping", "User Research", "AI/ML"],
       link: "#",
       featured: true
     },
     {
       id: 2,
-      title: "E-commerce Platform",
-      description: "Created a seamless shopping experience that increased conversion rates by 35% and improved mobile usability scores.",
-      category: "Web Design",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Nomad Spot",
+      description: "Designed a map-based mobile application for digital nomads to find work-friendly spaces wherever they go. Think Google Maps for places with high-speed internet!",
+      category: "Mobile Design",
+      image: "/images/projects/covers/cover-nomad-spot.png",
       technologies: ["Sketch", "InVision", "A/B Testing", "Analytics"],
       link: "#",
       featured: true
@@ -54,7 +68,7 @@ const Projects: React.FC = () => {
             Featured Projects
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            A selection of my recent work showcasing user-centered design solutions
+            A selection of my recent work.
           </p>
         </motion.div>
 
@@ -72,6 +86,7 @@ const Projects: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group cursor-pointer"
+              onClick={() => handleProjectClick(project.id)}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div className="relative overflow-hidden">

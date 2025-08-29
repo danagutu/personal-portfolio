@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           >
             Product Design,
             <span className="block text-primary-color">User Research</span>
-            <span className="block">& iOS Magic</span>
+            <span className="block">& Developer Magic</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-text-secondary mb-8 max-w-2xl mx-auto"
           >
-            Rooted in user research and built with Liquid Glass, the Human Interface Guidelines, and Apple's intelligent features, I design iOS apps that are elegant, intuitive, and unforgettable.
+            I design and build SaaS platforms that merge complex technology with human-centered design. From creating an enterprise simulation platform for autonomous driving to crafting a map-based app that empowers digital nomads, my work transforms sophisticated systems into intuitive products.
           </motion.p>
 
           {/* CTA Buttons */}

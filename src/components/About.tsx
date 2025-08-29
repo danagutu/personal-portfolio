@@ -48,7 +48,7 @@ const About: React.FC = () => {
               <div className="flex justify-center mb-6">
                 <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg">
                   <img 
-                    src="/profile_picture.jpg" 
+                    src="/images/profile/profile-picture.jpg" 
                     alt="Dana Gutu - Product Designer" 
                     className="w-full h-full object-cover"
                   />
@@ -56,7 +56,7 @@ const About: React.FC = () => {
               </div>
               
               <p className="text-text-secondary mb-6 leading-relaxed">
-                I'm a Product Designer with a background in software development — which means I understand both sides of the handoff. With 1.5+ years of experience in startups and corporate teams, I design iOS experiences that are not only intuitive for users but also seamless for developers to bring to life.
+                I'm a Junior Product Designer with a background in software development — which means I understand both sides of the handoff. With 1.5+ years of experience in startups and corporate teams, I design iOS experiences that are not only intuitive for users but also seamless for developers to bring to life.
               </p>
               
               <p className="text-text-secondary leading-relaxed">
