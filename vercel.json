@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": null,
+  "installCommand": "npm install",
+  "devCommand": "npm start",
+  "routes": [
+    {
+      "src": "/fidelis-ai-case-study",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
