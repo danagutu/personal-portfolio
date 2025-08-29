@@ -1,40 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import FidelisAICaseStudy from './components/FidelisAICaseStudy';
-
-const HomePage: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
-};
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/fidelis-ai-case-study" element={<FidelisAICaseStudy />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="App" style={{ padding: '20px', backgroundColor: '#f0f0f0', minHeight: '100vh' }}>
+      <h1 style={{ color: '#333' }}>Test - Portfolio is working!</h1>
+      <p style={{ color: '#666' }}>If you can see this, the basic React setup is working.</p>
+    </div>
   );
 };
 
