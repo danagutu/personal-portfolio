@@ -1,26 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, Target, Heart, Zap } from 'lucide-react';
 
 const About: React.FC = () => {
-  const values = [
-    {
-      icon: <Target size={24} />,
-      title: 'User-Centered',
-      description: 'Every design decision starts with understanding user needs and behaviors.'
-    },
-    {
-      icon: <Heart size={24} />,
-      title: 'Empathetic',
-      description: 'I believe in creating experiences that truly connect with people on an emotional level.'
-    },
-    {
-      icon: <Zap size={24} />,
-      title: 'Innovative',
-      description: 'Pushing boundaries while maintaining usability and accessibility standards.'
-    }
-  ];
-
   return (
     <section id="about" className="section bg-background-secondary">
       <div className="container">
@@ -36,11 +17,11 @@ const About: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Personal Info */}
+        <div className="max-w-4xl mx-auto">
+          {/* Personal Info */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
@@ -64,49 +45,7 @@ const About: React.FC = () => {
               </p>
             </div>
           </motion.div>
-
-          {/* Right Column - Values */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <h3 className="text-2xl font-semibold text-text-primary mb-8">
-              My Design Philosophy
-            </h3>
-            
-            {values.map((value, index) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200"
-              >
-                <div className="flex items-start">
-                  <div className="w-10 h-10 bg-primary-color/10 rounded-lg flex items-center justify-center mr-4 mt-1">
-                    <div className="text-primary-color">
-                      {value.icon}
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-text-primary mb-2">
-                      {value.title}
-                    </h4>
-                    <p className="text-text-secondary leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
-
-        
       </div>
     </section>
   );
