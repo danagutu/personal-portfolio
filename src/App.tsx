@@ -16,9 +16,9 @@ const HomePage: React.FC = () => {
       <Header />
       <main>
         <Hero />
+        <Projects />
         <About />
         <Skills />
-        <Projects />
         <Contact />
       </main>
       <Footer />
