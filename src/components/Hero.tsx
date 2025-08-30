@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const scrollToAbout = () => {
-    const element = document.querySelector('#about');
+  const scrollToProjects = () => {
+    const element = document.querySelector('#projects');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
             <button
-              onClick={scrollToAbout}
+              onClick={scrollToProjects}
               className="bg-primary-color text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary-color transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               View My Work
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
             className="absolute -bottom-12 left-1/2 transform -translate-x-1/2"
           >
             <button
-              onClick={scrollToAbout}
+              onClick={scrollToProjects}
               className="text-text-light hover:text-primary-color transition-colors duration-200 animate-bounce"
               aria-label="Scroll down"
             >
