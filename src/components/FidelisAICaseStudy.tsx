@@ -261,18 +261,26 @@ const FidelisAICaseStudy: React.FC = () => {
               <div className="mb-20">
                 <h3 className="text-2xl font-semibold text-text-primary mb-4">Project & Simulation Management</h3>
                 <p className="text-text-secondary leading-relaxed mb-8">
-                  Create projects and simulations, star favorites, and search/filter efficiently.
+                  1. Create and view projects, and search efficiently:
                 </p>
                 <div className="space-y-6">
                   <img src="/images/projects/detail/fidelis-ai-platform/image1.png" alt="Project Management Interface" className="rounded-lg shadow-xl w-full" />
+                                      <div className="grid md:grid-cols-2 gap-6">
+                      <img src="/images/projects/detail/fidelis-ai-platform/new-project-button.png" alt="New Project Button" className="rounded-lg shadow-xl w-full h-64 object-contain" />
+                      <img src="/images/projects/detail/fidelis-ai-platform/search-feature.png" alt="Search Feature" className="rounded-lg shadow-xl w-full h-64 object-contain" />
+                    </div>
+                  <p className="text-text-secondary leading-relaxed mt-4">
+                    2. Create and view simulations in a project:
+                  </p>
                   <img src="/images/projects/detail/fidelis-ai-platform/image2.png" alt="Simulation Management" className="rounded-lg shadow-xl w-full" />
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <img src="/images/projects/detail/fidelis-ai-platform/new-project-button.png" alt="New Project Button" className="rounded-lg shadow-xl w-full" />
-                    <img src="/images/projects/detail/fidelis-ai-platform/new-simulation-button.png" alt="New Simulation Button" className="rounded-lg shadow-xl w-full" />
+                  <div className="flex justify-center mt-6">
+                    <img src="/images/projects/detail/fidelis-ai-platform/new-simulation-button.png" alt="New Simulation Button" className="rounded-lg shadow-xl max-w-[300px] w-full" />
                   </div>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <img src="/images/projects/detail/fidelis-ai-platform/star-button.png" alt="Star Button" className="rounded-lg shadow-xl w-full" />
-                    <img src="/images/projects/detail/fidelis-ai-platform/search-feature.png" alt="Search Feature" className="rounded-lg shadow-xl w-full" />
+                  <p className="text-text-secondary leading-relaxed mt-4">
+                    3. Star your favorites:
+                  </p>
+                  <div className="flex justify-center mt-6">
+                    <img src="/images/projects/detail/fidelis-ai-platform/star-button.png" alt="Star Button" className="rounded-lg shadow-xl max-w-[150px] w-full" />
                   </div>
                 </div>
               </div>
@@ -281,11 +289,13 @@ const FidelisAICaseStudy: React.FC = () => {
               <div className="mb-20">
                 <h3 className="text-2xl font-semibold text-text-primary mb-4">Real-Time Simulation Playback</h3>
                 <p className="text-text-secondary leading-relaxed mb-8">
-                  Stream AI-driven scenarios directly from Unreal Engine, with frame-by-frame analysis and bulk downloads.
+                  1. Stream AI-driven scenarios directly from Unreal Engine.
                 </p>
                 <div className="space-y-6">
                   <img src="/images/projects/detail/fidelis-ai-platform/image3.png" alt="Real-time Simulation" className="rounded-lg shadow-xl w-full" />
-                  <img src="/images/projects/detail/fidelis-ai-platform/simulation-screen.png" alt="Simulation Screen" className="rounded-lg shadow-xl w-full max-w-2xl mx-auto" />
+                  <p className="text-text-secondary leading-relaxed mt-4">
+                    2. Conduct a frame-by-frame analysis and bulk downloads.
+                  </p>
                   <img src="/images/projects/detail/fidelis-ai-platform/frame-analysis.png" alt="Frame Analysis" className="rounded-lg shadow-xl w-full max-w-2xl mx-auto" />
                 </div>
               </div>
@@ -296,9 +306,9 @@ const FidelisAICaseStudy: React.FC = () => {
                 <p className="text-text-secondary leading-relaxed mb-8">
                   Add teammates to projects, run simulations together, and communicate through built-in chat.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <img src="/images/projects/detail/fidelis-ai-platform/add-teammate-and-view-messages.png" alt="Add Teammate and View Messages" className="rounded-lg shadow-xl w-full" />
-                  <img src="/images/projects/detail/fidelis-ai-platform/chats-and-notification.png" alt="Chats and Notifications" className="rounded-lg shadow-xl w-full" />
+                <div className="flex justify-center gap-2">
+                  <img src="/images/projects/detail/fidelis-ai-platform/add-teammate-and-view-messages.png" alt="Add Teammate and View Messages" className="rounded-lg shadow-xl max-w-[150px] object-contain" />
+                  <img src="/images/projects/detail/fidelis-ai-platform/chats-and-notification.png" alt="Chats and Notifications" className="rounded-lg shadow-xl max-w-[150px] object-contain" />
                 </div>
               </div>
             </motion.div>
